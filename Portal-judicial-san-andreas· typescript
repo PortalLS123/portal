@@ -1,0 +1,290 @@
+export default function PortalJudicialSanAndreas() {
+  const seal = "/mnt/data/publicservices.webp";
+  const sections = [
+    {
+      id: "principios",
+      title: "Princípios Fundamentais",
+      articles: [
+        ["Artigo 1.º", "A soberania, una e indivisível, reside no povo, que a exerce segundo as formas previstas na Constituição."],
+        ["Artigo 2.º", "O Estado subordina-se à Constituição e funda-se na legalidade democrática."],
+        ["Artigo 3.º", "São deveres do Estado: a) Criar condições políticas, económicas, sociais e culturais que promovam a prosperidade de San Andreas; b) Defender a democracia política e incentivar a participação dos cidadãos; c) Promover o bem-estar, qualidade de vida e igualdade entre os cidadãos."],
+      ],
+    },
+    {
+      id: "direitos",
+      title: "Direitos e Deveres Fundamentais",
+      articles: [
+        ["Artigo 4.º", "Todos os cidadãos gozam dos direitos e estão sujeitos aos deveres consignados na Constituição."],
+        ["Artigo 5.º", "Todos os cidadãos têm a mesma dignidade social e são iguais perante a lei. Ninguém pode ser privilegiado ou discriminado por qualquer motivo."],
+        ["Artigo 6.º", "Os direitos são diretamente aplicáveis. Só podem ser restringidos quando necessário. Não podem ter efeito retroativo. É obrigatório possuir documentos de identificação."],
+      ],
+    },
+    {
+      id: "saude",
+      title: "Saúde",
+      articles: [["Artigo 18.º", "Todos têm direito à proteção da saúde. Este direito inclui: a) Serviço universal; b) Condições de vida dignas; c) Acesso a cuidados médicos."]],
+    },
+    {
+      id: "empresas",
+      title: "Empresas Privadas",
+      articles: [
+        ["Artigo 19.º", "O Estado incentiva a atividade empresarial. Pode intervir apenas em casos legais. Pode limitar certos setores."],
+        ["Artigo 20.º", "Propriedade abandonada pode ser expropriada."],
+        ["Artigo 21.º", "Eventos são ilegais quando: não são licenciados; não têm autorização; não declaram dinheiro."],
+      ],
+    },
+    { id: "policia", title: "Polícia", articles: [["Artigo 22.º", "Garante segurança e legalidade. Atua apenas quando necessário. Deve respeitar os direitos dos cidadãos."]] },
+    {
+      id: "expressao",
+      title: "Liberdade de Expressão e Informação",
+      articles: [
+        ["Artigo 23.º", "Todos têm direito à liberdade de expressão. Não existe censura. Existe direito de resposta e indemnização."],
+        ["Artigo 24.º", "Provas obtidas ilegalmente são inválidas."],
+      ],
+    },
+    { id: "lei-criminal", title: "Aplicação da Lei Criminal", articles: [["Artigo 25.º", "Só há crime se houver lei anterior. Ninguém pode ser julgado duas vezes pelo mesmo crime. Existe direito a revisão e indemnização."]] },
+    { id: "penas", title: "Limites das Penas e Medidas de Segurança", articles: [["Artigo 26.º", "Podem existir penas prolongadas. Direitos fundamentais mantêm-se. Recolha de ADN apenas com base legal."]] },
+    { id: "habeas-corpus", title: "Habeas Corpus", articles: [["Artigo 27.º", "Proteção contra prisão ilegal. Pode ser solicitado por qualquer cidadão. Decisão em até 8 dias."]] },
+    { id: "processo-criminal", title: "Garantias de Processo Criminal", articles: [["Artigo 28.º", "Presunção de inocência. Direito a advogado. Direito de defesa. Leitura obrigatória dos Direitos de Miranda."]] },
+    { id: "familia", title: "Família, Casamento e Filiação", articles: [["Artigo 29.º", "Direito ao casamento e família. Igualdade entre cônjuges. Proteção dos filhos. Comunhão de bens obrigatória."]] },
+    { id: "imprensa", title: "Liberdade de Imprensa e Meios de Comunicação Social", articles: [["Artigo 30.º", "Liberdade de imprensa garantida. Direito à informação. Independência dos meios de comunicação."]] },
+    { id: "religiao", title: "Liberdade de Consciência, Religião e Culto", articles: [["Artigo 31.º", "Liberdade religiosa total. Separação entre Estado e religião. Proibição de discriminação religiosa."]] },
+    { id: "manifestacao", title: "Direito de Reunião e de Manifestação", articles: [["Artigo 32.º", "Direito de reunião sem autorização. Direito de manifestação."]] },
+    { id: "trabalhadores", title: "Direitos dos Trabalhadores", articles: [["Artigo 33.º", "Direito a salário justo. Condições dignas de trabalho. Segurança e saúde. Descanso e férias. Apoio em desemprego."]] },
+    { id: "jurisdicional", title: "Função Jurisdicional", articles: [["Artigo 34.º", "Tribunais administram justiça. São independentes. Defendem direitos dos cidadãos."]] },
+    { id: "tribunais", title: "Decisões dos Tribunais", articles: [["Artigo 35.º", "Decisões são obrigatórias. Prevalecem sobre outras autoridades. O Estado pode assumir dívidas em certos casos."]] },
+  ];
+
+  const licenses = [
+    {
+      title: "Licença de Uso e Porte de Arma",
+      tone: "bg-red-50 border-red-200",
+      rules: [
+        "A licença deve ser requerida por um advogado a um juiz.",
+        "O portador da licença está limitado a uma única arma de fogo.",
+        "No caso de perda da arma o proprietário da mesma é obrigado a declará-la como furtada ou roubada num Departamento de Polícia.",
+        "Praticar qualquer tipo de crimes que comprometam a integridade física ou psicológica de qualquer membro da sociedade dá direito à revogação da licença.",
+        "A venda, revenda ou entrega de material disponível que esta licença forneça dá direito à revogação imediata e a acusações no âmbito do código penal.",
+        "Após a compra da arma de fogo o nº de série tem de ser fornecido ao Departamento de Justiça.",
+      ],
+      steps: [
+        "Realizar testes psicotécnicos junto do Departamento de Emergência Médica no hospital de Pillbox ou Paleto Bay.",
+        "Contactar um advogado para dar início ao processo.",
+        "Caso o processo seja concluído e aprovado, pagar 2.500$.",
+        "Dirigir-se à polícia com o documento fornecido pelo Departamento de Justiça.",
+        "Requisitar a licença a um oficial do Departamento de Polícia de Los Santos em serviço: Sargento, Tenente e Chefe.",
+      ],
+    },
+    {
+      title: "Licença de Caça",
+      tone: "bg-amber-50 border-amber-200",
+      rules: [
+        "A licença deve ser requerida ao departamento fiscal.",
+        "O portador da licença está limitado a uma única arma de fogo.",
+        "No caso de perda da arma o proprietário da mesma é obrigado a declará-la como furtada ou roubada num Departamento de Polícia.",
+        "Praticar qualquer tipo de crimes que comprometam a integridade física ou psicológica de qualquer membro da sociedade ou animal dá direito à revogação da licença.",
+        "A venda, revenda ou entrega de material disponível que esta licença forneça dá direito à revogação imediata e a acusações no âmbito do código penal.",
+        "A zona de caça é limitada pelo Mount Josiah, Mount Chiliad e Mount Gordo.",
+        "Raton Canyon é considerada uma zona de caça ilegal, dando direito a pena de prisão e revogação da licença.",
+        "São considerados animais em via de extinção pumas e panteras.",
+        "Peles de animais que sejam consideradas com grau 4 são ilegais e devem ser retornadas à mãe natureza ou entregues a uma entidade governamental do estado.",
+        "Após a compra da arma de fogo o nº de série tem de ser fornecido ao Departamento de Justiça.",
+      ],
+      steps: [
+        "Realizar testes psicotécnicos junto do Departamento de Emergência Médico no hospital de Pillbox ou Paleto Bay.",
+        "Contactar o departamento fiscal para dar início ao processo.",
+        "Caso o processo seja concluído e aprovado, pagar 3.000$.",
+        "Dirigir-se à polícia com o documento fornecido pelo Departamento de Justiça.",
+        "Requisitar a licença a um oficial que esteja de serviço.",
+      ],
+    },
+    {
+      title: "Licença de Pesca",
+      tone: "bg-sky-50 border-sky-200",
+      rules: [
+        "A licença deve ser requerida a um Agente do Departamento de Polícia de Los Santos mediante o pagamento de 500$.",
+        "É apenas permitido pescar no Pacific Ocean e no Alamo Sea.",
+      ],
+      steps: [
+        "Solicitar a licença a um Agente do Departamento de Polícia de Los Santos.",
+        "Efetuar o pagamento de 500$.",
+        "Respeitar apenas as zonas autorizadas de pesca.",
+      ],
+    },
+  ];
+
+  const toc = [
+    "Princípios Fundamentais",
+    "Direitos e Deveres Fundamentais",
+    "Saúde",
+    "Empresas Privadas",
+    "Polícia",
+    "Liberdade de Expressão e Informação",
+    "Aplicação da Lei Criminal",
+    "Limites das Penas e Medidas de Segurança",
+    "Habeas Corpus",
+    "Garantias de Processo Criminal",
+    "Família, Casamento e Filiação",
+    "Liberdade de Imprensa e Meios de Comunicação Social",
+    "Liberdade de Consciência, Religião e Culto",
+    "Direito de Reunião e de Manifestação",
+    "Direitos dos Trabalhadores",
+    "Função Jurisdicional",
+    "Decisões dos Tribunais",
+  ];
+
+  return (
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_transparent_28%),linear-gradient(180deg,_#
+      <header className="border-b border-slate-200 bg-slate-950 text-white">
+        <div className="mx-auto max-w-7xl px-6 py-12">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Portal Judicial Oficial</p>
+              <h1 className="mt-3 text-4xl font-bold tracking-tight">Constituição de San Andreas</h1>
+              <p className="mt-4 max-w-3xl text-slate-300">
+                Portal com estilo institucional para consulta da Constituição, decisões dos tribunais e regulamentos de licenças.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-slate-800 bg-slate-900 px-5 py-4 text-sm text-slate-300 shadow-2xl">
+              <div className="font-semibold text-white">Consulta Pública</div>
+              <div className="mt-1">Legislação, jurisprudência e licenciamento</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-6 py-8 lg:grid-cols-[290px_1fr]">
+        <aside className="h-fit rounded-3xl border border-slate-200 bg-white p-5 shadow-sm lg:sticky lg:top-6">
+          <div className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Navegação</div>
+          <nav className="mt-4 space-y-2">
+            <a href="#indice" className="block rounded-xl px-3 py-2 text-sm hover:bg-slate-100">Índice</a>
+            <a href="#constituicao" className="block rounded-xl px-3 py-2 text-sm hover:bg-slate-100">Constituição</a>
+            <a href="#licencas" className="block rounded-xl px-3 py-2 text-sm hover:bg-slate-100">Licenças</a>
+            <a href="#decisoes" className="block rounded-xl px-3 py-2 text-sm hover:bg-slate-100">Decisões dos Tribunais</a>
+          </nav>
+
+          <div className="mt-6 border-t border-slate-200 pt-4">
+            <div className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Secções</div>
+            <div className="mt-3 space-y-2">
+              {sections.map((section) => (
+                <a key={section.id} href={`#${section.id}`} className="block rounded-xl px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">
+                  {section.title}
+                </a>
+              ))}
+            </div>
+          </div>
+        </aside>
+
+        <div className="space-y-8">
+          <section id="indice" className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Índice</p>
+            <h2 className="mt-2 text-2xl font-bold">Estrutura da Constituição</h2>
+            <div className="mt-6 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+              {toc.map((item) => (
+                <div key={item} className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section id="constituicao" className="space-y-6">
+            {sections.map((section) => (
+              <article key={section.id} id={section.id} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <div className="flex flex-col gap-3 border-b border-slate-200 pb-4 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Constituição</p>
+                    <h3 className="mt-1 text-2xl font-bold">{section.title}</h3>
+                  </div>
+                  <span className="rounded-full bg-slate-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">
+                    {section.articles.length} artigo{section.articles.length > 1 ? "s" : ""}
+                  </span>
+                </div>
+
+                <div className="mt-5 space-y-4">
+                  {section.articles.map(([article, text]) => (
+                    <div key={article} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                      <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">{article}</div>
+                      <p className="mt-3 leading-7 text-slate-700">{text}</p>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </section>
+
+          <section id="licencas" className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Regulamentos</p>
+            <h2 className="mt-2 text-2xl font-bold">Licenças e Porte de Armas</h2>
+            <p className="mt-3 max-w-3xl text-slate-600">
+              Consulta administrativa sobre licença de uso e porte de arma, licença de caça e licença de pesca.
+            </p>
+
+            <div className="mt-6 grid gap-6 xl:grid-cols-3">
+              {licenses.map((license) => (
+                <div key={license.title} className={`rounded-3xl border p-6 shadow-sm ${license.tone}`}>
+                  <h3 className="text-xl font-bold text-slate-900">{license.title}</h3>
+
+                  <div className="mt-5">
+                    <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-600">Regulamentos</div>
+                    <ul className="mt-3 space-y-3 text-sm leading-6 text-slate-700">
+                      {license.rules.map((rule) => (
+                        <li key={rule} className="rounded-2xl bg-white/80 px-4 py-3 shadow-sm">{rule}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="mt-6">
+                    <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-600">Como obter</div>
+                    <ol className="mt-3 space-y-3 text-sm leading-6 text-slate-700">
+                      {license.steps.map((step, index) => (
+                        <li key={step} className="flex gap-3 rounded-2xl bg-white/80 px-4 py-3 shadow-sm">
+                          <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">{index + 1}</span>
+                          <span>{step}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section id="decisoes" className="grid gap-6 lg:grid-cols-2">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Função Jurisdicional</p>
+              <h2 className="mt-2 text-2xl font-bold">Tribunais e Justiça</h2>
+              <p className="mt-4 leading-7 text-slate-700">
+                Os tribunais administram a justiça em nome do povo, atuam com independência e asseguram a defesa dos direitos legalmente protegidos dos cidadãos.
+              </p>
+              <div className="mt-5 rounded-2xl bg-slate-50 p-5 text-sm leading-7 text-slate-700">
+                <strong>Artigo 34.º</strong> — Tribunais administram justiça. São independentes. Defendem direitos dos cidadãos.
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-slate-200 bg-slate-950 p-6 text-white shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Decisões dos Tribunais</p>
+              <h2 className="mt-2 text-2xl font-bold">Força Obrigatória</h2>
+              <p className="mt-4 leading-7 text-slate-300">
+                As decisões dos tribunais prevalecem sobre outras autoridades e vinculam todas as entidades nos termos definidos pela Constituição de San Andreas.
+              </p>
+              <div className="mt-5 rounded-2xl border border-slate-800 bg-slate-900 p-5">
+                <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Artigo 35.º</div>
+                <p className="mt-3 leading-7 text-slate-300">
+                  Decisões são obrigatórias. Prevalecem sobre outras autoridades. O Estado pode assumir dívidas em certos casos.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer className="border-t border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+          <div>Portal Judicial de San Andreas</div>
+          <div>Constituição · Licenças · Tribunais</div>
+        </div>
+      </footer>
+    </div>
+  );
+}
